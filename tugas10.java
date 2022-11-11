@@ -1,32 +1,21 @@
 import java.util.Scanner;
    
-class PiramidaBintang {
-  public static void main(String args[]){
-            
-    Scanner input = new Scanner(System.in);
+public class tugas10 {
+    public static void main(String[] args) {
+        System.out.println("== Program Perhitungan Volume Tabung ==");
+        Scanner input = new Scanner(System.in);
+             double hasil1, hasil2, d, t;
+             double phi = 3.14;
        
-    System.out.println("##  Program Java Piramida Bintang ##");
-    System.out.println("====================================");
-    System.out.println();
-     
-    int tinggi_segitiga,i,j,k;
-  
-    System.out.print("Input tinggi segitiga: ");
-    tinggi_segitiga = input.nextInt();
-     
-    System.out.println();
-    
-    for(i=1; i<=tinggi_segitiga; i++) {
-  
-      for(j=1; j<=tinggi_segitiga-i; j++) {
-        System.out.print(" ");
-      }
-    
-      for(k=1; k<=i; k++) {
-        System.out.print(" *");
-      }
-      System.out.println();
+        System.out.print("Masukkan Angka Diameter : ");
+             d = input.nextDouble();
+        System.out.print("Masukkan Angka Panjang : ");
+             t = input.nextDouble();
+       
+        hasil2 = d / 2;
+        hasil1 = (phi * hasil2 * hasil2 * t);
+       
+        System.out.println("Hasil Perhitungannya adalah : " + hasil1);
     }
      
   }
-}
